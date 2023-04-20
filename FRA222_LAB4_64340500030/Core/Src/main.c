@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+//Tammasorn Rojanaakarapong
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,9 +50,9 @@ float position = 0.0;
 float setposition = 0.0;
 float feedback = 0.0;
 
-float Kp = 1.0;
-float Ki = 0.0001;
-float Kd = 0.01;
+//float Kp = 1.0;
+//float Ki = 0.0001;
+//float Kd = 0.01;
 
 double p, i, d, last_error;
 /* USER CODE END PV */
@@ -394,7 +395,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 double pid_control(int32_t error){
-    double Kp = 1.5;
+    double Kp = 1.7; //1.5
     double Ki = 0.000001;
     double Kd = 0.1;
     double res;
